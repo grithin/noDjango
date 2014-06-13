@@ -1,0 +1,5 @@
+I post this here primarily for the use of the file webServe.py.  I have included a controller I pulled from the site i used this on, and I have left in the now useless db connection string.
+
+This is a minuscule python web framework.  Good, perhaps, for looking at how one might start building such (handling HTTP requests, output buffer, templating.
+
+I built it in 2008 in response to disliking django and pylons.  It has only been used for one personal site of mine.
