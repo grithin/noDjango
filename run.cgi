@@ -21,7 +21,6 @@ sitePaths = [
 for v in sitePaths:
 	match = re.search(v[0],Http.environ['REQUEST_URI'])
 	if match:
-		exec 'import ctrl.'+v[1]
+		__import__('ctrl.{}'.format(v[1]),{},{},fromlist=['ctrl'])
 		break
-
 Http.purge()
